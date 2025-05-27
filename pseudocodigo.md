@@ -1,5 +1,3 @@
----
-
 # 📘 O que é Pseudocódigo?
 
 **Pseudocódigo** é uma forma simplificada de descrever algoritmos utilizando linguagem natural estruturada. Ele serve como um rascunho lógico antes da implementação em uma linguagem de programação real.
@@ -15,7 +13,7 @@
 
 ## 📌 Exemplo 1: Verificar se uma pessoa pode votar
 
-> **Problema:** A pessoa pode votar se tiver 16 anos ou mais.
+**Problema:** A pessoa pode votar se tiver 16 anos ou mais.
 
 ```pseudocodigo
 Início
@@ -31,7 +29,7 @@ Fim
 
 ## 📌 Exemplo 2: Preparar café
 
-> **Problema:** Fazer café caso tenha café e água disponíveis.
+**Problema:** Fazer café caso tenha café e água disponíveis.
 
 ```pseudocodigo
 Início
@@ -50,7 +48,7 @@ Fim
 
 ## 📌 Exemplo 3: Calcular o troco de uma compra
 
-> **Problema:** Dado o valor da compra e o valor pago, calcular e exibir o troco.
+**Problema:** Dado o valor da compra e o valor pago, calcular e exibir o troco.
 
 ```pseudocodigo
 Início
