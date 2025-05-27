@@ -1,12 +1,10 @@
----
-
 # 🧠 Algoritmo: Conceito, Classificação e Aplicações
 
 ## 📘 O que é um Algoritmo?
 
 Um **algoritmo** é uma **sequência finita de passos bem definidos**, organizados de forma lógica, com o objetivo de resolver um problema ou executar uma tarefa.
 
-> **Definição simplificada:** Um algoritmo é como uma receita de bolo: você segue os passos na ordem certa para atingir um resultado.
+**Definição simplificada:** Um algoritmo é como uma receita de bolo: você segue os passos na ordem certa para atingir um resultado.
 
 ---
 
