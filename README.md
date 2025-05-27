@@ -1,5 +1,3 @@
-Claro! Aqui está um resumo em **Markdown**:
-
 ---
 
 # 📌 Filtrando Números Pares e Múltiplos de 4 (1 a 100)
