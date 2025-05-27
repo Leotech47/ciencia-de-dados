@@ -1,5 +1,3 @@
-Claro! Abaixo está a explicação e os três exemplos reescritos em **Markdown**:
-
 ---
 
 # 📘 O que é Pseudocódigo?
