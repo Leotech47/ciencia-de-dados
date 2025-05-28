@@ -151,3 +151,243 @@ Com esses conhecimentos, você já pode:
 
 ---
 
+Ótimo! Vamos continuar a aula com mais conteúdos úteis sobre operações matemáticas em Python, ainda no formato Markdown.
+
+---
+
+## 🔁 6️⃣ Operações com Funções Personalizadas
+
+Você pode criar suas próprias funções para reutilizar cálculos:
+
+```python
+def soma(a, b):
+    return a + b
+
+def potencia(base, expoente):
+    return base ** expoente
+
+print(soma(10, 5))           # 15
+print(potencia(2, 3))        # 8
+```
+
+---
+
+## 🧮 7️⃣ Conversões de Tipos Numéricos
+
+### `int()`, `float()`, `str()`
+
+Essas funções convertem valores entre tipos numéricos e texto.
+
+```python
+valor = "10.5"
+
+numero = float(valor)    # Converte string para float
+inteiro = int(float(valor))  # Converte string para float e depois para int
+
+print(numero)    # 10.5
+print(inteiro)   # 10
+```
+
+---
+
+## 📦 8️⃣ Bibliotecas Extras para Matemática
+
+Além do `math`, outras bibliotecas úteis incluem:
+
+### ✅ `random` – Geração de números aleatórios
+
+```python
+import random
+
+print(random.randint(1, 10))      # Número inteiro entre 1 e 10
+print(random.uniform(1.5, 5.5))   # Número float entre 1.5 e 5.5
+```
+
+### ✅ `decimal` – Precisão em cálculos financeiros
+
+```python
+from decimal import Decimal
+
+a = Decimal('10.35')
+b = Decimal('2.20')
+
+print(a + b)     # Resultado com precisão exata: 12.55
+```
+
+---
+
+## 🧑‍🏫 9️⃣ Exercícios Práticos
+
+### 1. Calcular o perímetro e área de um retângulo
+
+```python
+largura = 5
+altura = 3
+
+perimetro = 2 * (largura + altura)
+area = largura * altura
+
+print(f"Perímetro: {perimetro}")
+print(f"Área: {area}")
+```
+
+### 2. Converter graus Celsius para Fahrenheit
+
+```python
+celsius = 30
+fahrenheit = (celsius * 9/5) + 32
+
+print(f"{celsius}°C = {fahrenheit}°F")
+```
+
+### 3. Calcular a hipotenusa (Teorema de Pitágoras)
+
+```python
+import math
+
+cateto1 = 3
+cateto2 = 4
+
+hipotenusa = math.sqrt(cateto1**2 + cateto2**2)
+print(f"Hipotenusa: {hipotenusa}")
+```
+
+---
+
+## 🧾 🔟 Resumo da Aula
+
+* **Operadores**: `+`, `-`, `*`, `/`, `//`, `%`, `**`
+* **Ordem de precedência**: Parênteses > Potência > Multiplicação/Divisão > Soma/Subtração
+* **Operadores de atribuição**: `=`, `+=`, `-=`, `*=`, etc.
+* **Funções do `math`**: `sqrt()`, `pow()`, `floor()`, `ceil()`, `factorial()`
+* **Bibliotecas úteis**: `math`, `random`, `decimal`
+* **Conversão de tipos**: `int()`, `float()`, `str()`
+
+---
+
+## 🏁 Próximos Passos
+
+* Pratique resolvendo pequenos problemas com matemática em Python
+* Estude estruturas de repetição e condicionais para fazer programas interativos
+* Aprenda a usar o Jupyter Notebook para testar expressões matemáticas com mais facilidade
+
+---
+
+Perfeito! Vamos adicionar mais conteúdo complementar para fechar bem a aula. Incluirei tópicos como **tratamento de erros matemáticos**, **funções lambda para cálculos simples**, e **boas práticas**. Tudo ainda no padrão Markdown.
+
+---
+
+## 🚫 1️⃣1️⃣ Tratamento de Erros Matemáticos
+
+Em alguns casos, é importante prevenir falhas como **divisão por zero** ou **valores inválidos**:
+
+```python
+try:
+    a = 10
+    b = 0
+    resultado = a / b
+except ZeroDivisionError:
+    print("Erro: divisão por zero não é permitida.")
+```
+
+Outro exemplo com raiz quadrada negativa:
+
+```python
+import math
+
+try:
+    x = -9
+    resultado = math.sqrt(x)
+except ValueError:
+    print("Erro: não é possível calcular a raiz de número negativo.")
+```
+
+---
+
+## ⚡ 1️⃣2️⃣ Funções Lambda para Cálculos Simples
+
+Funções lambda são úteis para expressões matemáticas rápidas e reutilizáveis:
+
+```python
+# Função tradicional
+def dobro(x):
+    return x * 2
+
+# Função lambda
+dobro_lambda = lambda x: x * 2
+
+print(dobro(5))          # 10
+print(dobro_lambda(5))   # 10
+```
+
+Exemplo com soma:
+
+```python
+soma = lambda a, b: a + b
+print(soma(3, 4))  # 7
+```
+
+---
+
+## 📌 1️⃣3️⃣ Boas Práticas ao Usar Matemática em Python
+
+* ✅ **Use nomes de variáveis claros** (`raio`, `altura`, `preco_total`)
+* ✅ **Comente fórmulas** complexas
+* ✅ **Valide entradas do usuário**
+* ✅ **Evite usar números mágicos** direto no código (prefira variáveis nomeadas)
+* ✅ **Utilize `round()` para controle de casas decimais**
+
+```python
+preco = 10 / 3
+print(round(preco, 2))   # Resultado: 3.33
+```
+
+---
+
+## 🧠 1️⃣4️⃣ Desafio Final
+
+Crie um programa que calcule o valor de uma prestação em atraso, aplicando juros simples:
+
+**Fórmula:**
+`prestacao = valor + (valor * taxa * tempo)`
+
+Onde:
+
+* `valor` = valor original da dívida
+* `taxa` = juros ao mês (ex: 0.02 para 2%)
+* `tempo` = número de meses de atraso
+
+```python
+def calcular_prestacao(valor, taxa, tempo):
+    return valor + (valor * taxa * tempo)
+
+valor = float(input("Digite o valor original da dívida: "))
+taxa = float(input("Digite a taxa de juros (ex: 0.02 para 2%): "))
+tempo = int(input("Digite o número de meses em atraso: "))
+
+total = calcular_prestacao(valor, taxa, tempo)
+print(f"Valor total com juros: R${total:.2f}")
+```
+
+---
+
+## 📘 Conclusão Final
+
+Você aprendeu:
+
+* Operações básicas e avançadas
+* Uso de bibliotecas matemáticas
+* Tratamento de erros
+* Aplicações com lógica
+* Práticas seguras para cálculos em Python
+
+Com isso, você tem uma base sólida para aplicar a matemática na programação Python de forma prática e funcional.
+
+---
+
+Se quiser agora, posso gerar:
+
+* 📄 Arquivo `.md` com toda a aula
+* 📘 PDF formatado
+* 🧪 Versão interativa em Jupyter Notebook
+
